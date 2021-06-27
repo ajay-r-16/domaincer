@@ -1,0 +1,183 @@
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left{
+    background-color: #07f;
+    text-align: center;
+}
+
+.top-right{
+    position: absolute;
+    align-self: flex-end;
+    top: 25px;
+    margin-right: 25px;
+}
+
+.half{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 50vw;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+}
+
+.card{
+    border: 3px solid black !important;
+    box-shadow: 5px 5px 5px 5px gray !important;
+}
+
+.form-control, .form-select{
+    border: 2px solid gray !important;
+}
+
+.form-control:focus, .form-select:focus{
+    box-shadow: none !important;
+    border: 3px solid #07f !important;
+}
+
+
+.switch{
+    margin-bottom: 20px;
+}
+
+
+.switch_a {
+    color: #07f;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.switch_a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid #07f;
+    transition: 0.3s;
+  }
+
+.switch_a:hover:before {
+    width: 90%;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #07f !important;
+    color: white !important;
+    border-radius: 20px !important;
+}
+
+.btn:focus, .canvas_btn:focus{
+    box-shadow: none !important;
+    border: 3px solid white !important;
+}
+
+.home_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.job_btn{
+    background-color: #262626 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    
+}
+
+.canvas_btn{
+    border-radius: 10px;
+}
+
+.status_green{
+    background-color: darkred !important;
+}
+
+.status_red{
+    background-color: darkgreen !important;
+}
+
+.spinner-grow{
+    margin-right: 10px;
+}
+
+.jobs_container{
+    max-width: 65% !important;
+}
+
+.view_container{
+    width: 70% !important;
+    border: 3px solid black
+}
+
+@media only screen and (max-width: 884px){
+    .home_container{
+        flex-direction: column-reverse;
+    }
+    .view_container{
+        width: 90% !important;
+    }
+}
+
+
+@media only screen and (max-width: 810px){
+    .left{
+        width: 40vw;
+        padding: 20px;
+    }
+    .right{
+        width: 60vw;
+    }
+    .jobs_container{
+        max-width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .container-fluid{
+        flex-direction: column;
+    }
+
+
+    .left{
+        width: 100vw;
+        min-height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .right{
+        width: 100vw;
+        min-height: auto;
+        margin-bottom: 30px;
+        justify-content: flex-start;
+    }
+
+    .top-right{
+        position: relative;
+        top: 0px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 550px){
+    .jobs_container{
+        max-width: 100% !important;
+    }
+}
+
